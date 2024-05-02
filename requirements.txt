@@ -1,0 +1,4 @@
+requests==2.31.0
+fire==0.5.0
+sqlalchemy==2.0.20
+psycopg2==2.9.8
