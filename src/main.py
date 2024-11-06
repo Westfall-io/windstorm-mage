@@ -22,6 +22,8 @@
 ## For ripper: Same
 ## For spear: Have to find the actions in the commit for this head.
 
+from env import *
+
 import time
 start_time = time.time()
 
@@ -35,10 +37,10 @@ from models import Thread_Executions
 
 def connect():
     db_type = "postgresql"
-    user = "postgres"
-    passwd = "mysecretpassword"
+    user = DBUSER
+    passwd = DBPASS
     address = SQLHOST
-    db_name = "sysml2"
+    db_name = DBTABLE
 
     address = db_type+"://"+user+":"+passwd+"@"+address+"/"+db_name
     engine = db.create_engine(address)
@@ -155,10 +157,13 @@ def post_threads(source, threads, force):
                     continue
 
             # Post it to windrunner
-            requests.post(WINDRUNNERHOST, json = {
-                'action': r.json()["results"][0],
-                'thread_execution': te.id,
-                'prev_thread_name': None})
+            try:
+                requests.post(WINDRUNNERHOST, json = {
+                    'action': r.json()["results"][0],
+                    'thread_execution': te.id,
+                    'prev_thread_name': None})
+            except:
+                print('Could not reach next endpoint but sensor executed correctly.')
         else:
             print('Found dependent action, skipping. This will be run from thread {}.'.format(action['dependency']))
 

@@ -36,7 +36,7 @@ spec:
                 - "\nThis is the payload:\n"
                 - ""
               - name: publish
-                image: core.harbor.domain/digitalforge/windstorm-mage:0.1.21
+                image: docker.io/westfallio/windstorm-mage:0.1.21
                 env:
                 - name: WINDRUNNERHOST
                   value: http://windrunner-webhook-eventsource-svc.argo-events:12000/windrunner
