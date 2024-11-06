@@ -25,20 +25,6 @@
 import time
 start_time = time.time()
 
-import os
-
-SQLDEF = "localhost:5432"
-SQLHOST = os.environ.get("SQLHOST",SQLDEF)
-
-WINDRUNNERHOST = os.environ.get(
-    "WINDRUNNERHOST",
-    "http://windrunner-webhook-eventsource-svc.argo-events:12000/windrunner"
-)
-
-WINDSTORMAPIHOST = os.environ.get(
-    "WINDSTORMAPIHOST",
-    "http://windstorm-api-service.windstorm:8000/"
-)
 from datetime import datetime
 from uuid import uuid4 as uuid_gen
 
