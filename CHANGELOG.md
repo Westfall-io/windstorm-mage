@@ -1,8 +1,12 @@
 # CHANGELOG
 
+## v0.0.3 (2024-11-11)
+
 ## v0.0.2 (2024-11-11)
 
 ### :memo:
+
+* :memo: Adding webhook sequence diagram to README.md ([`564cc55`](https://github.com/Westfall-io/windstorm-mage/commit/564cc556767536ffd0415bb72bbf94af73ddd8c2))
 
 * :memo: Adding sequence diagram ([`384b68a`](https://github.com/Westfall-io/windstorm-mage/commit/384b68a750a60a3565d73a9b1b4828ac5514ee80))
 
