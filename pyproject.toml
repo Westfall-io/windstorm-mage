@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "windstorm-mage"
-version = "0.0.1"
+version = "0.0.2"
 description = "Common webhook for event queuing"
 authors = ["Christopher Cox"]
 readme = "README.md"
@@ -60,7 +60,7 @@ patch_tags = [
 
 [project]
 name = "windstorm-mage"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Christopher Cox", email="chris.cox@westfall.io" },
 ]
