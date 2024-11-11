@@ -1,17 +1,27 @@
 # windstorm-mage
 
-## Adding sample mermaid to github.
+## Webhook Sequence.
 ```mermaid
   sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop HealthCheck
-        John->>John: Fight against hypochondria
+    participant Windspear
+    participant Windripper
+    participant Windsage
+    alt windspear
+      Windspear->>Windstorm-Mage: Windspear Webhook
+      activate Windstorm-Mage
+        Windstorm-Mage->>Windrunner: Windrunner Webhook
+      deactivate Windstorm-Mage
     end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly
-
+    alt windripper
+      Windripper->>Windstorm-Mage: Windripper Webhook
+      activate Windstorm-Mage
+        Windstorm-Mage->>Windrunner: Windrunner Webhook
+      deactivate Windstorm-Mage
+    end
+    alt windsage
+      Windsage->>Windstorm-Mage: Windsage Webhook
+      activate Windstorm-Mage
+        Windstorm-Mage->>Windrunner: Windrunner Webhook
+      deactivate Windstorm-Mage
+    end
 ```
