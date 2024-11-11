@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.0.2 (2024-11-11)
+
+### :memo:
+
+* :memo: Adding sequence diagram ([`384b68a`](https://github.com/Westfall-io/windstorm-mage/commit/384b68a750a60a3565d73a9b1b4828ac5514ee80))
+
+* :memo: Testing mermaid integration ([`74dc3d7`](https://github.com/Westfall-io/windstorm-mage/commit/74dc3d7d75c1525032af8df72ba376783fca8784))
+
 ## v0.0.1 (2024-11-06)
 
 ### :bug:
