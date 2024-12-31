@@ -49,10 +49,9 @@ patch_tags = [
     ":white_check_mark:",
 ]
 
-#[tool.semantic_release.branches.main]
-#match = "(main|master)"
-#prerelease = false
-#build_command = "pip install poetry && poetry build"
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease = false
 
 [project.urls]
 "Homepage" = "https://github.com/Westfall-io/windstorm-mage"
