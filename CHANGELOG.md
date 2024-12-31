@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.2.0 (2024-12-31)
+
+### :sparkles:
+
+* :sparkles: Migrating from minikube version to fully hosted k8s ([`a89f974`](https://github.com/Westfall-io/windstorm-mage/commit/a89f9744563c9b1f2ba18ae165247fb7243f7b31))
+
 ## v0.1.0 (2024-12-31)
 
 ### :sparkles:
