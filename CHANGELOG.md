@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.1.0 (2024-12-31)
+
+### :sparkles:
+
+* :sparkles: Support for minikube ([`5311e3a`](https://github.com/Westfall-io/windstorm-mage/commit/5311e3a945339c5755cf2032acda0497b61490f7))
+
 ## v0.0.3 (2024-11-11)
 
 ## v0.0.2 (2024-11-11)
