@@ -1,5 +1,8 @@
 # windstorm-mage
 
+Windstorm Mage is the central webhook that all webhooks forward requests to
+after processing their specific information.
+
 ## Webhook Sequence.
 ```mermaid
   sequenceDiagram
